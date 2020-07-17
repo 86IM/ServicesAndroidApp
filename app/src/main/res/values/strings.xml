@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Wrocław Usługi</string>                        <!-- название заголовка-->
+    <!-- title-->
+    <string name="app_name">Wrocław Usługi</string>                        
 
-    <string name="meb_top">Meble</string>                                 <!-- подписи кнопок в горизонтальном лайауте-->
+    <!-- buttons in horizontal -->
+    <string name="meb_top">Meble</string>                                 
     <string name="nap_top">Naprawy</string>
     <string name="hyd_top">Hydraulika</string>
     <string name="ele_top">Elektryka</string>
@@ -9,16 +11,19 @@
     <string name="spr_top">Sprzątanie</string>
     <string name="agd_top">AGD</string>
 
-    <string name="red_button_1">Zamówić</string>                        <!-- кнопка заказать-->
+    <!-- add button-->
+    <string name="red_button_1">Zamówić</string>                        
 
-    <string name="ele_txt">Wszystkie usługi elektryczne</string>        <!-- текст под заголовком-->
+    <!-- text after title-->
+    <string name="ele_txt">Wszystkie usługi elektryczne</string>        
     <string name="hyd_txt">Wszystkie usługi hydrauliczne</string>
     <string name="meb_txt">Wszystkie usługi meblowe</string>
     <string name="agd_txt">Naprawa, instalacja sprzętu AGD</string>
     <string name="mal_txt">Malowanie ścian i sufitów</string>
     <string name="spr_txt">Mieszkań, poremontowe, biura</string>
 
-    <string name="meb_title">Meble</string>                             <!-- заголовки карточек-->
+    <!-- title names-->
+    <string name="meb_title">Meble</string>                             
     <string name="nap_title">Naprawy</string>
     <string name="hyd_title">Hydraulika</string>
     <string name="ele_title">Elektryka</string>
@@ -47,7 +52,7 @@
         rozbudowanych konstrukcji. Składanie mebli często przerasta klientów i w efekcie jest potrzebna pomoc fachowców.</string>
 
 
-    <!--это так пишется пробел в стрингах \u0020 -->
+   
     <string name="txtMebOpis3"> \u0020 Szukasz pomocy w skręcaniu mebli IKEA? Skontaktuj się z nami! Oferujemy profesjonalny
         montaż mebli IKEA.</string>
 
