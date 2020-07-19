@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/ic_meb1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/ic_meb2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/ic_meb3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/ic_meb4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/ic_meb5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/ic_meb6"
+        android:duration="300"/>
+    <item
+        android:drawable="@drawable/ic_meb7"
+        android:duration="700"/>
+
+</animation-list>

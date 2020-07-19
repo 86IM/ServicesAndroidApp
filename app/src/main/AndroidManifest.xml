@@ -10,7 +10,12 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityZamowicElectrik"></activity>
+        <activity android:name=".ActivityZamowicSprzatanie"></activity>
+        <activity android:name=".ActivityZamowicMalowanie" />
+        <activity android:name=".ActivityZamowicAgd" />
+        <activity android:name=".ActivityZamowicMeble" />
+        <activity android:name=".ActivityZamowicHydraulik" />
+        <activity android:name=".ActivityZamowicElectrik" />
         <activity android:name=".ActivityElektryka" />
         <activity android:name=".ActivityHydraulika" />
         <activity android:name=".ActivityNaprawy" />

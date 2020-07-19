@@ -9,7 +9,6 @@
     </style>
 
     <style name="Theme.AppCompat.Light.NoActionBar." parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar.">

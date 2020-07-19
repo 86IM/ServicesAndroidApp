@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wrocław Usługi</string>                        <!-- название заголовка-->
+    <string name="app_name">Usługi</string>                        <!-- название заголовка-->
 
     <string name="meb_top">Meble</string>                                 <!-- подписи кнопок в горизонтальном лайауте-->
     <string name="nap_top">Naprawy</string>

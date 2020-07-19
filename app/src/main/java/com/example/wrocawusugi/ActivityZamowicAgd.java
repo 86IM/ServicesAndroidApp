@@ -4,26 +4,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.view.animation.Animation;
 import android.widget.ImageView;
 
-public class ActivityZamowicElectrik extends AppCompatActivity {
+public class ActivityZamowicAgd extends AppCompatActivity {
 
-    AnimationDrawable simpleAnimation;
+    AnimationDrawable simple4Animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zamowic_electrik);
-
-        ImageView imageView = (ImageView)findViewById(R.id.image);
-        imageView.setBackgroundResource(R.drawable.animation);
-        simpleAnimation = (AnimationDrawable) imageView.getBackground();
+        setContentView(R.layout.activity_zamowic_agd);
+        ImageView imageView = (ImageView)findViewById(R.id.image4);
+        imageView.setBackgroundResource(R.drawable.animation4);
+        simple4Animation = (AnimationDrawable) imageView.getBackground();
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        simpleAnimation.start();
+        simple4Animation.start();
     }
 }

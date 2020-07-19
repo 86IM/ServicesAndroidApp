@@ -7,6 +7,7 @@
     <color name="black">#000000</color>
     <color name="red">#DE560A</color>
     <color name="yellow">#FBC711</color>
+    <color name="whiteYellow">#F9E098</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>

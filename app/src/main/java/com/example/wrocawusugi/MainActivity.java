@@ -16,15 +16,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button button = (Button) findViewById(R.id.button_settings);
-        Button button1 = (Button) findViewById(R.id.meble_button);
-        Button button2 = (Button) findViewById(R.id.naprawy_button);
-        Button button3 = (Button) findViewById(R.id.hydraulika_button);
-        Button button4 = (Button) findViewById(R.id.elektryka_button);
-        Button button5 = (Button) findViewById(R.id.elektryka_zamowic_button);
+        Button button_settings = (Button) findViewById(R.id.button_settings);
+        Button meble_button = (Button) findViewById(R.id.meble_button);
+        Button naprawy_button = (Button) findViewById(R.id.naprawy_button);
+        Button hydraulika_button = (Button) findViewById(R.id.hydraulika_button);
+        Button elektryka_button = (Button) findViewById(R.id.elektryka_button);
+
+        //Buttons add
+
+        Button elektryka_zamowic_button = (Button) findViewById(R.id.elektryka_zamowic_button);
+        Button hydraulika_zamowic_button2 = (Button) findViewById(R.id.hydraulika_zamowic_button2);
+        Button meble_zamowic_button3 = (Button) findViewById(R.id.meble_zamowic_button3);
+        Button agd_zamowic_button4 = (Button) findViewById(R.id.agd_zamowic_button4);
+        Button malowanie_zamowic_button5 = (Button) findViewById(R.id.malowanie_zamowic_button5);
+        Button sprzatanie_zamowic_button6 = (Button) findViewById(R.id.sprzatanie_zamowic_button6);
 
 
-        button.setOnClickListener(new View.OnClickListener() {
+
+        button_settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openSettingsActivity();
@@ -32,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        button1.setOnClickListener(new View.OnClickListener() {
+        meble_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityMeble();
@@ -40,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        button2.setOnClickListener(new View.OnClickListener() {
+        naprawy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityNaprawy();
@@ -49,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-        button3.setOnClickListener(new View.OnClickListener() {
+        hydraulika_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityHydraulika();
@@ -59,8 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        button4.setOnClickListener(new View.OnClickListener() {
+        elektryka_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityElektryka();
@@ -68,10 +73,59 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        button5.setOnClickListener(new View.OnClickListener() {
+        agd_zamowic_button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicAgd();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+        });
+        elektryka_zamowic_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityZamowicElectrik();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+        });
+        hydraulika_zamowic_button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicHydraulik();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+        });
+        meble_zamowic_button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicMeble();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+        });
+        agd_zamowic_button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicAgd();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+        });
+        malowanie_zamowic_button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicMalowanie();
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+            }
+
+        });
+        sprzatanie_zamowic_button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityZamowicSprzatanie();
                 setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
             }
@@ -83,25 +137,56 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
+
     public void openActivityMeble() {
         Intent intent = new Intent(this, ActivityMeble.class);
         startActivity(intent);
     }
+
     public void openActivityNaprawy() {
         Intent intent = new Intent(this, ActivityNaprawy.class);
         startActivity(intent);
     }
+
     public void openActivityHydraulika() {
         Intent intent = new Intent(this, ActivityHydraulika.class);
         startActivity(intent);
     }
+
     public void openActivityElektryka() {
         Intent intent = new Intent(this, ActivityElektryka.class);
         startActivity(intent);
     }
+
     public void openActivityZamowicElectrik() {
         Intent intent = new Intent(this, ActivityZamowicElectrik.class);
         startActivity(intent);
     }
+
+    public void openActivityZamowicHydraulik() {
+        Intent intent = new Intent(this, ActivityZamowicHydraulik.class);
+        startActivity(intent);
+    }
+
+    public void openActivityZamowicMeble() {
+        Intent intent = new Intent(this, ActivityZamowicMeble.class);
+        startActivity(intent);
+    }
+
+    public void openActivityZamowicAgd() {
+        Intent intent = new Intent(this, ActivityZamowicAgd.class);
+        startActivity(intent);
+    }
+
+    public void openActivityZamowicMalowanie() {
+        Intent intent = new Intent(this, ActivityZamowicMalowanie.class);
+        startActivity(intent);
+    }
+
+    public void openActivityZamowicSprzatanie() {
+        Intent intent = new Intent(this, ActivityZamowicSprzatanie.class);
+        startActivity(intent);
+    }
+
 }
 
